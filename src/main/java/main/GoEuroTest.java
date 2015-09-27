@@ -34,7 +34,7 @@ public class GoEuroTest {
 			List<Place> places = mapper.maps(placesJson);
 			
 			if (places.isEmpty()) {
-				throw new Exception("Your place may be incorrect or not in the databse");
+				throw new Exception("Your place may be incorrect or not in the database");
 			}
 			
 			List<IWrapper> wrappers = getListPlaceWrapper(places);
